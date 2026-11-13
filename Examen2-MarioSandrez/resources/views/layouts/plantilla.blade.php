@@ -46,7 +46,11 @@
                                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                                 Dashboard
                             </a>
-                            
+                            <div class="sb-sidenav-menu-heading">Módulos Operativos</div>
+                            <a class="nav-link {{ request()->routeIs('medicamentos.*') ? 'active' : '' }}" href="{{ route('medicamentos.index') }}">
+                                <div class="sb-nav-link-icon"><i class="fas fa-capsules"></i></div>
+                                Medicamentos
+                            </a>
                         </div>
                     </div>
                     <div class="sb-sidenav-footer">
