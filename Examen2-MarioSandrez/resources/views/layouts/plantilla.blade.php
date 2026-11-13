@@ -51,6 +51,10 @@
                                 <div class="sb-nav-link-icon"><i class="fas fa-capsules"></i></div>
                                 Medicamentos
                             </a>
+                            <a class="nav-link {{ request()->routeIs('proveedores.*') ? 'active' : '' }}" href="{{ route('proveedores.index') }}">
+                                <div class="sb-nav-link-icon"><i class="fas fa-truck-medical"></i></div>
+                                Proveedores
+                            </a>
                         </div>
                     </div>
                     <div class="sb-sidenav-footer">
@@ -60,7 +64,6 @@
                 </nav>
             </div>
 
-            <!-- Contenedor Principal de Inyección -->
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4 pt-4">
@@ -68,7 +71,6 @@
                     </div>
                 </main>
 
-                <!-- Pie de Página Institucional -->
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid px-4">
                         <div class="d-flex align-items-center justify-content-between small">
