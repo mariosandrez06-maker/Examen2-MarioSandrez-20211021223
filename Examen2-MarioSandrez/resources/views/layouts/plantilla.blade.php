@@ -55,6 +55,10 @@
                                 <div class="sb-nav-link-icon"><i class="fas fa-truck-medical"></i></div>
                                 Proveedores
                             </a>
+                            <a class="nav-link {{ request()->routeIs('empleados.*') ? 'active' : '' }}" href="{{ route('empleados.index') }}">
+                                <div class="sb-nav-link-icon"><i class="fas fa-users"></i></div>
+                                Empleados
+                            </a>
                         </div>
                     </div>
                     <div class="sb-sidenav-footer">

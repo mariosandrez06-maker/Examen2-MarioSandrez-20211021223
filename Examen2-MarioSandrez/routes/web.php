@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\MedicamentoController;
 use App\Http\Controllers\ProveedorController;
+use App\Http\Controllers\EmpleadoController;
 
 Route::middleware('guest')->group(function () {
     Route::get('/', fn () => redirect()->route('login'));
@@ -16,4 +17,5 @@ Route::middleware('auth')->group(function () {
     Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
     Route::resource('medicamentos', MedicamentoController::class);
     Route::resource('proveedores', ProveedorController::class);
+    Route::resource('empleados', EmpleadoController::class);
 });
